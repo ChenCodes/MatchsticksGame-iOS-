@@ -170,43 +170,14 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="twentyMatch" translatesAutoresizingMaskIntoConstraints="NO" id="duO-kE-z2I">
                                 <rect key="frame" x="-4" y="0.0" width="379" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qov-yd-E1I">
-                                <rect key="frame" x="14" y="587" width="86" height="60"/>
-                                <color key="backgroundColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="104" id="Nfk-IC-6gh"/>
-                                    <constraint firstAttribute="width" constant="104" id="WjS-NB-jP8"/>
-                                    <constraint firstAttribute="height" constant="60" id="jlZ-X0-5et"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="86" id="kW1-OH-pCu"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="21"/>
-                                <state key="normal" title="1 Match">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="pickedOne:" destination="ByY-eG-dJu" eventType="touchUpInside" id="X9g-9G-EDL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lH-fb-qa2">
-                                <rect key="frame" x="100" y="587" width="94" height="60"/>
-                                <color key="backgroundColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="0.53000000000000003" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="US1-b6-Akq"/>
-                                    <constraint firstAttribute="width" constant="94" id="yOz-nd-xlR"/>
-                                </constraints>
-                                <state key="normal" title="2 Match">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="twoPicked:" destination="ByY-eG-dJu" eventType="touchUpInside" id="Anh-ND-PvI"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSh-8P-028">
-                                <rect key="frame" x="202" y="587" width="98" height="60"/>
+                                <rect key="frame" x="257" y="587" width="98" height="60"/>
                                 <color key="backgroundColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="98" id="Rjd-3d-R3c"/>
                                     <constraint firstAttribute="width" constant="98" id="UTJ-ic-6Bo"/>
                                     <constraint firstAttribute="height" constant="60" id="XIb-OC-lp1"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="tle-XP-Vey"/>
                                 </constraints>
                                 <state key="normal" title="3 Match">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -217,22 +188,61 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73f-RV-smi">
                                 <rect key="frame" x="100" y="46" width="174" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lH-fb-qa2">
+                                <rect key="frame" x="138" y="587" width="94" height="60"/>
+                                <color key="backgroundColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="0.53000000000000003" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="OgY-dY-6fr"/>
+                                    <constraint firstAttribute="height" constant="60" id="US1-b6-Akq"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="94" id="hDB-ER-gSk"/>
+                                    <constraint firstAttribute="width" constant="94" id="yOz-nd-xlR"/>
+                                </constraints>
+                                <state key="normal" title="2 Match">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="twoPicked:" destination="ByY-eG-dJu" eventType="touchUpInside" id="Anh-ND-PvI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3t-xg-JoN">
+                                <rect key="frame" x="12" y="11" width="70" height="69"/>
+                                <state key="normal" image="homeIcon"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="kmw-db-knH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XY0-oj-yhX">
+                                <rect key="frame" x="12" y="588" width="97" height="59"/>
+                                <color key="backgroundColor" red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="0.57999999999999996" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="QMQ-XP-Moj"/>
+                                    <constraint firstAttribute="width" constant="88" id="nXb-V4-GnE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="1 Match">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="qov-yd-E1I" firstAttribute="leading" secondItem="lDO-PW-bGI" secondAttribute="leadingMargin" constant="-6" id="Ob9-wV-Qju"/>
+                            <constraint firstItem="FSh-8P-028" firstAttribute="leading" secondItem="2lH-fb-qa2" secondAttribute="trailing" constant="25" id="Ao1-rg-rAb"/>
+                            <constraint firstItem="FSh-8P-028" firstAttribute="leading" secondItem="2lH-fb-qa2" secondAttribute="trailing" constant="25" id="PWR-cD-q3U"/>
+                            <constraint firstItem="N8i-cc-cQj" firstAttribute="top" secondItem="2lH-fb-qa2" secondAttribute="bottom" constant="20" id="a79-bO-azJ"/>
                             <constraint firstItem="FSh-8P-028" firstAttribute="leading" secondItem="2lH-fb-qa2" secondAttribute="trailing" constant="8" id="c1m-MM-sgd"/>
                             <constraint firstItem="N8i-cc-cQj" firstAttribute="top" secondItem="duO-kE-z2I" secondAttribute="bottom" id="ciE-uZ-DpI"/>
                             <constraint firstItem="duO-kE-z2I" firstAttribute="top" secondItem="lDO-PW-bGI" secondAttribute="topMargin" id="gdS-yB-uV8"/>
+                            <constraint firstItem="N8i-cc-cQj" firstAttribute="top" secondItem="XY0-oj-yhX" secondAttribute="bottom" constant="21" id="j3p-j5-ngq"/>
                             <constraint firstItem="N8i-cc-cQj" firstAttribute="top" secondItem="2lH-fb-qa2" secondAttribute="bottom" constant="20" id="j6Z-nQ-MGT"/>
-                            <constraint firstItem="2lH-fb-qa2" firstAttribute="leading" secondItem="qov-yd-E1I" secondAttribute="trailing" id="jI2-z6-WY4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="duO-kE-z2I" secondAttribute="trailing" constant="-20" id="lpr-Q8-avJ"/>
+                            <constraint firstItem="FSh-8P-028" firstAttribute="trailing" secondItem="lDO-PW-bGI" secondAttribute="trailingMargin" id="piv-WY-ao2"/>
+                            <constraint firstItem="N8i-cc-cQj" firstAttribute="top" secondItem="FSh-8P-028" secondAttribute="bottom" constant="20" id="rJW-3x-AWm"/>
                             <constraint firstItem="duO-kE-z2I" firstAttribute="leading" secondItem="lDO-PW-bGI" secondAttribute="leadingMargin" constant="-20" id="rh9-Bp-EjF"/>
-                            <constraint firstItem="N8i-cc-cQj" firstAttribute="top" secondItem="qov-yd-E1I" secondAttribute="bottom" constant="20" id="vcD-0s-m2P"/>
+                            <constraint firstItem="XY0-oj-yhX" firstAttribute="leading" secondItem="lDO-PW-bGI" secondAttribute="leadingMargin" constant="-8" id="ucf-O9-PDg"/>
                             <constraint firstItem="N8i-cc-cQj" firstAttribute="top" secondItem="FSh-8P-028" secondAttribute="bottom" constant="20" id="xls-GO-8IN"/>
                         </constraints>
                     </view>
@@ -342,5 +352,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="FoT-8h-HNP"/>
+        <segue reference="kmw-db-knH"/>
     </inferredMetricsTieBreakers>
 </document>
