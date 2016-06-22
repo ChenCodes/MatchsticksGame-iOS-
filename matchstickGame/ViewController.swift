@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+var numberPlayers = 0
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -20,6 +22,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func onePlayerPressed(sender: AnyObject) {
+        numberPlayers = 1
+        
+        
+        
+    }
 
+    @IBAction func twoPlayerPressed(sender: AnyObject) {
+        
+        numberPlayers = 2
+        
+        
+        
+    }
 }
 

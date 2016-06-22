@@ -14,6 +14,8 @@
 		43E896771D1B232B00CC6821 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E896751D1B232B00CC6821 /* LaunchScreen.storyboard */; };
 		43E896821D1B232B00CC6821 /* matchstickGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E896811D1B232B00CC6821 /* matchstickGameTests.swift */; };
 		43E8968D1D1B232C00CC6821 /* matchstickGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E8968C1D1B232C00CC6821 /* matchstickGameUITests.swift */; };
+		43E8969B1D1B343200CC6821 /* chooseStickPageOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E8969A1D1B343200CC6821 /* chooseStickPageOne.swift */; };
+		43E8969D1D1B353900CC6821 /* gamePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E8969C1D1B353900CC6821 /* gamePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		43E896881D1B232B00CC6821 /* matchstickGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = matchstickGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E8968C1D1B232C00CC6821 /* matchstickGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = matchstickGameUITests.swift; sourceTree = "<group>"; };
 		43E8968E1D1B232C00CC6821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43E8969A1D1B343200CC6821 /* chooseStickPageOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = chooseStickPageOne.swift; sourceTree = "<group>"; };
+		43E8969C1D1B353900CC6821 /* gamePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gamePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				43E8966C1D1B232B00CC6821 /* AppDelegate.swift */,
 				43E8966E1D1B232B00CC6821 /* ViewController.swift */,
 				43E896701D1B232B00CC6821 /* Main.storyboard */,
+				43E8969C1D1B353900CC6821 /* gamePage.swift */,
+				43E8969A1D1B343200CC6821 /* chooseStickPageOne.swift */,
 				43E896731D1B232B00CC6821 /* Assets.xcassets */,
 				43E896751D1B232B00CC6821 /* LaunchScreen.storyboard */,
 				43E896781D1B232B00CC6821 /* Info.plist */,
@@ -256,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43E8969D1D1B353900CC6821 /* gamePage.swift in Sources */,
 				43E8966F1D1B232B00CC6821 /* ViewController.swift in Sources */,
+				43E8969B1D1B343200CC6821 /* chooseStickPageOne.swift in Sources */,
 				43E8966D1D1B232B00CC6821 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
