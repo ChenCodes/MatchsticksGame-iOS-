@@ -10,6 +10,7 @@ import UIKit
 
 class gamePage: UIViewController {
     
+    @IBOutlet weak var playerCurrent: UILabel!
     
     @IBOutlet weak var winLabel: UILabel!
     @IBOutlet weak var backgroundImage: UIImageView!
@@ -30,20 +31,20 @@ class gamePage: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        
-        
         newGame()
-        play()
+        if numberPlayers == 1 {
+            play()
+        } else {
+            play2()
+        }
+
         
         
     }
     var playerMadeMove = false
     
     func newGame() {
-        
 
-
-        print("new game just started")
         if numberSticks == 10 {
             currentSticks = 10
             backgroundImage.image = UIImage(named: "tenMatch.png")
@@ -54,18 +55,43 @@ class gamePage: UIViewController {
     }
     
     
+    var playerMoved = "None"
+    
+    
+    func play2() {
+        if playerMoved == "None" || playerMoved == "2" {
+            playerCurrent.text = "Player turn: One"
+            
+            if currentSticks <= 0 {
+                print("i should get in here")
+                winLabel.text = "Player One wins!"
+            }
+            print("player 1, make your move")
+        } else if playerMoved == "1" {
+            
+            playerCurrent.text = "Player turn: Two"
+            if currentSticks <= 0 {
+                winLabel.text = "Player One wins!"
+            }
+            print("player 2, make your move")
+        }
+        
+        
+        
+        
+    }
+    
+    
+    
+    
     func play() {
         if playerMadeMove == false {
             print("pick 1, 2, or 3 matches")
         } else if playerMadeMove == true {
             if currentSticks == 0 {
                 winLabel.text = "YOU WIN!"
-
                 newGame()
             } else {
-                
-            
-            
             let randomMatch = arc4random_uniform(2)
 
             switch randomMatch {
@@ -138,9 +164,23 @@ class gamePage: UIViewController {
         
         currentSticks -= 1
         if currentSticks <= 0 {
-            winLabel.text = "YOU WIN!"
+            
+            if numberPlayers == 1 {
+                winLabel.text = "YOU WIN!"
+                newGame()
+            } else if numberPlayers == 2 {
+                if playerMoved == "1" {
+                    winLabel.text = "Player Two won!"
+                } else if playerMoved == "2" {
+                    winLabel.text = "Player One won!"
+                }
+                newGame()
+            }
+            
+            
 
-            newGame()
+            
+
         } else if currentSticks == 1 {
             backgroundImage.image = UIImage(named: "oneMatch.png")
 
@@ -183,8 +223,21 @@ class gamePage: UIViewController {
         } else {
 
         }
-        playerMadeMove = true
-        play()
+        
+        if numberPlayers == 1 {
+            playerMadeMove = true
+            play()
+        } else if numberPlayers == 2 {
+            if playerMoved == "2" || playerMoved == "None" {
+                playerMoved = "1"
+                play2()
+            } else if playerMoved == "1" {
+                playerMoved = "2"
+                play2()
+            }
+            
+        }
+
     }
     
     
@@ -195,10 +248,24 @@ class gamePage: UIViewController {
         
         currentSticks -= 2
         if currentSticks <= 0 {
-            winLabel.text = "YOU WIN!"
-
-            newGame()
-        } else if currentSticks == 1 {
+            
+            if numberPlayers == 1 {
+                winLabel.text = "YOU WIN!"
+                newGame()
+            } else if numberPlayers == 2 {
+                if playerMoved == "1" {
+                    winLabel.text = "Player Two won!"
+                } else if playerMoved == "2" {
+                    winLabel.text = "Player One won!"
+                }
+                newGame()
+            }
+            
+            
+            
+            
+            
+        }  else if currentSticks == 1 {
             backgroundImage.image = UIImage(named: "oneMatch.png")
         } else if currentSticks == 19 {
             backgroundImage.image = UIImage(named: "nineteenMatch.png")
@@ -239,10 +306,21 @@ class gamePage: UIViewController {
         } else {
 
         }
-        playerMadeMove = true
-        play()
+
         
-        
+        if numberPlayers == 1 {
+            playerMadeMove = true
+            play()
+        } else if numberPlayers == 2 {
+            if playerMoved == "2" || playerMoved == "None" {
+                playerMoved = "1"
+                play2()
+            } else if playerMoved == "1" {
+                playerMoved = "2"
+                play2()
+            }
+            
+        }
         
         
         
@@ -254,10 +332,20 @@ class gamePage: UIViewController {
         currentSticks -= 3
         
         if currentSticks <= 0 {
-            winLabel.text = "YOU WIN!"
-
-            newGame()
-        } else if currentSticks == 1 {
+            
+            if numberPlayers == 1 {
+                winLabel.text = "YOU WIN!"
+                newGame()
+            } else if numberPlayers == 2 {
+                if playerMoved == "1" {
+                    winLabel.text = "Player Two won!"
+                } else if playerMoved == "2" {
+                    winLabel.text = "Player One won!"
+                }
+                newGame()
+            }
+            
+        }  else if currentSticks == 1 {
             backgroundImage.image = UIImage(named: "oneMatch.png")
 
         } else if currentSticks == 19 {
@@ -299,10 +387,21 @@ class gamePage: UIViewController {
         } else {
 
         }
-        playerMadeMove = true
-        play()
         
         
+        if numberPlayers == 1 {
+            playerMadeMove = true
+            play()
+        } else if numberPlayers == 2 {
+            if playerMoved == "2" || playerMoved == "None" {
+                playerMoved = "1"
+                play2()
+            } else if playerMoved == "1" {
+                playerMoved = "2"
+                play2()
+            }
+            
+        }
         
         
         
