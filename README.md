@@ -1,8 +1,8 @@
 # MatchsticksGame
 Simple math game that can be played against an AI or another user. Rules are as follows:
--User can only pick up 1, 2, or 3 matchsticks.
--Each player (up to a maximum of two) takes turns picking up matchsticks.
--The player to pick up the last matchstick is the winner. 
+##User can only pick up 1, 2, or 3 matchsticks.
+##Each player (up to a maximum of two) takes turns picking up matchsticks.
+##The player to pick up the last matchstick is the winner. 
 
 ##Home Page
 ![alt text](https://github.com/ChenCodes/MatchsticksGame/blob/master/Screen%20Shot%202016-06-22%20at%203.55.22%20PM.png)
