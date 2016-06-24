@@ -21,4 +21,5 @@ Simple math game that can be played against an AI or another user. Rules are as 
 ![alt text](https://github.com/ChenCodes/MatchsticksGame/blob/master/Screen%20Shot%202016-06-22%20at%2010.52.10%20PM.png)
 ######In this page the rules for the game are shown. 
 
-
+Completion date:
+6/22/16
